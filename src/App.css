@@ -5,6 +5,7 @@
 .calculator {
   width: 600px;
 }
+
 .result {
   background-color: rgb(133, 133, 133);
   width: 576px !important;
@@ -22,6 +23,7 @@
 .operators {
   background-color: rgb(255, 145, 71);
 }
+
 button {
   border: 1px solid rgb(197, 197, 197);
 }
