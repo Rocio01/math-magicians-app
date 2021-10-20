@@ -12,7 +12,8 @@
 ## Built With
 
 - React
-  
+- Bootstrap
+- CSS3
 
 
 ## Getting Started
@@ -24,7 +25,7 @@ To get a local copy up and running follow these simple example steps.
 - Clone this repository using the link above (click on the 'code' button)
 - Open a terminal and `cd` to the cloned repository
 - run `npm install`
-- run `npm run start` or [http://localhost:3000](http://localhost:3000) to open a live server in your preferred browser
+- run `npm run start` to open a live server in your preferred browser.
  
 
 ## Author
