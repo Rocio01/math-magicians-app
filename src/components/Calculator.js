@@ -3,9 +3,9 @@ import React from 'react';
 export default class Calculator extends React.PureComponent {
   render() {
     return (
-      <div className="calculator row">
+      <div className="calculator row align-items-center">
         <div className="result float-right">
-          <p className="py-1">0</p>
+          <p className="py-3">0</p>
         </div>
         <div className="calculator-buttons row">
           <div className="calculator-digits container col row">
@@ -21,16 +21,16 @@ export default class Calculator extends React.PureComponent {
             <button type="button" className=" col-4">1</button>
             <button type="button" className=" col-4">2</button>
             <button type="button" className=" col-4">3</button>
-            <button type="button" className=" col-10">0</button>
-            <button type="button" className=" col-2">.</button>
+            <button type="button" className=" col-9">0</button>
+            <button type="button" className=" col-3">.</button>
 
           </div>
-          <div className="calculator-operators container col-2 row">
-            <button type="button">/</button>
-            <button type="button">x</button>
-            <button type="button">-</button>
-            <button type="button">+</button>
-            <button type="button">=</button>
+          <div className="calculator-operators container col-3 row">
+            <button type="button" className="operators">/</button>
+            <button type="button" className="operators">x</button>
+            <button type="button" className="operators">-</button>
+            <button type="button" className="operators">+</button>
+            <button type="button" className="operators">=</button>
           </div>
 
         </div>

@@ -1,9 +1,27 @@
 .calculator-buttons {
-  height: 350px;
+  height: 400px;
 }
 
 .calculator {
-  width: 500px;
+  width: 600px;
 }
 .result {
+  background-color: rgb(133, 133, 133);
+  width: 576px !important;
+  color: white;
+  text-align: right;
+}
+
+.App {
+  position: absolute;
+  left: 30%;
+  top: 10%;
+  font: 1em sans-serif;
+}
+
+.operators {
+  background-color: rgb(255, 145, 71);
+}
+button {
+  border: 1px solid rgb(197, 197, 197);
 }
