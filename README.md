@@ -12,7 +12,8 @@
 ## Built With
 
 - React
-  
+- Bootstrap
+- CSS3
 
 
 ## Getting Started
