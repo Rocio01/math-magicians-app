@@ -7,9 +7,8 @@ class App extends React.PureComponent {
     return (
       <div className="App ">
 
-        <body>
-          <Calculator />
-        </body>
+        <Calculator />
+
       </div>
     );
   }
