@@ -1,17 +1,14 @@
 import React from 'react';
 import './App.css';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Calculator from './components/Calculator';
 
-class App extends React.PureComponent {
-  render() {
-    return (
-      <div className="App ">
-
-        <Calculator />
-
-      </div>
-    );
-  }
-}
+const App = () => (
+  <div className="App ">
+    <Router>
+      <Calculator />
+    </Router>
+  </div>
+);
 
 export default App;
