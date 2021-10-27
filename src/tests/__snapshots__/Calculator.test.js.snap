@@ -1,0 +1,175 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches calculator snapshot 1`] = `
+<div
+  className="row"
+>
+  <h2
+    className="p-2 col-4"
+  >
+     lets do a little math!
+  </h2>
+  <div
+    className="col"
+  >
+    <div
+      className="calculator row align-items-center"
+    >
+      <div
+        className="result float-right"
+      >
+        <p
+          className="py-3"
+        >
+          0
+        </p>
+      </div>
+      <div
+        className="calculator-buttons row"
+      >
+        <div
+          className="calculator-digits container col row"
+        >
+          <button
+            className=" col-4"
+            onClick={[Function]}
+            type="button"
+          >
+            AC
+          </button>
+          <button
+            className=" col-4"
+            onClick={[Function]}
+            type="button"
+          >
+            +/-
+          </button>
+          <button
+            className=" col-4"
+            onClick={[Function]}
+            type="button"
+          >
+            %
+          </button>
+          <button
+            className=" col-4"
+            onClick={[Function]}
+            type="button"
+          >
+            7
+          </button>
+          <button
+            className=" col-4"
+            onClick={[Function]}
+            type="button"
+          >
+            8
+          </button>
+          <button
+            className=" col-4"
+            onClick={[Function]}
+            type="button"
+          >
+            9
+          </button>
+          <button
+            className=" col-4"
+            onClick={[Function]}
+            type="button"
+          >
+            4
+          </button>
+          <button
+            className=" col-4"
+            onClick={[Function]}
+            type="button"
+          >
+            5
+          </button>
+          <button
+            className=" col-4"
+            onClick={[Function]}
+            type="button"
+          >
+            6
+          </button>
+          <button
+            className=" col-4"
+            onClick={[Function]}
+            type="button"
+          >
+            1
+          </button>
+          <button
+            className=" col-4"
+            onClick={[Function]}
+            type="button"
+          >
+            2
+          </button>
+          <button
+            className=" col-4"
+            onClick={[Function]}
+            type="button"
+          >
+            3
+          </button>
+          <button
+            className=" col-9"
+            onClick={[Function]}
+            type="button"
+          >
+            0
+          </button>
+          <button
+            className=" col-3"
+            onClick={[Function]}
+            type="button"
+          >
+            .
+          </button>
+        </div>
+        <div
+          className="calculator-operators container col-3 row"
+        >
+          <button
+            className="operators"
+            onClick={[Function]}
+            type="button"
+          >
+            ÷
+          </button>
+          <button
+            className="operators"
+            onClick={[Function]}
+            type="button"
+          >
+            x
+          </button>
+          <button
+            className="operators"
+            onClick={[Function]}
+            type="button"
+          >
+            -
+          </button>
+          <button
+            className="operators"
+            onClick={[Function]}
+            type="button"
+          >
+            +
+          </button>
+          <button
+            className="operators"
+            onClick={[Function]}
+            type="button"
+          >
+            =
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
