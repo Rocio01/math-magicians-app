@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<ul
+  className="nav p-3"
+>
+  <li
+    className="nav-item"
+  >
+    <h4
+      className="nav-link title"
+    >
+      MATH MAGICIANS
+    </h4>
+  </li>
+  <li
+    className="nav-item "
+  >
+    <h4
+      className="nav-link"
+    >
+      <a
+        aria-current={null}
+        href="/home"
+        onClick={[Function]}
+      >
+        Home
+      </a>
+    </h4>
+  </li>
+  <li
+    className="nav-item "
+  >
+    <h4
+      className="nav-link"
+    >
+      <a
+        aria-current="page"
+        className="active-link"
+        href="/"
+        onClick={[Function]}
+        style={Object {}}
+      >
+        Calculator
+      </a>
+    </h4>
+  </li>
+  <li
+    className="nav-item "
+  >
+    <h4
+      className="nav-link"
+    >
+      <a
+        aria-current={null}
+        href="/quote"
+        onClick={[Function]}
+      >
+        Quote
+      </a>
+    </h4>
+  </li>
+</ul>
+`;
