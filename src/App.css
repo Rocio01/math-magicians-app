@@ -27,3 +27,8 @@
 button {
   border: 1px solid rgb(197, 197, 197);
 }
+
+.active-link {
+  color: orangered;
+  text-decoration: underline;
+}
