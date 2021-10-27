@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches home snapshot 1`] = `
+<div
+  className="p-5 m-5"
+>
+  <p
+    className="p-5 m-5"
+  >
+    If I were again beginning my studies, I would follow the advice of Plato and start with mathematics.
+    <small>
+       -Galileo Galilei 
+    </small>
+  </p>
+</div>
+`;
