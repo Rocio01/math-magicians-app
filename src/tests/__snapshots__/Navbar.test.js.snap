@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`matches snapshot 1`] = `
+exports[`matches navbar snapshot 1`] = `
 <ul
   className="nav p-3"
 >
