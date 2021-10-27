@@ -1,4 +1,4 @@
-import calculate from "../logic/calculate";
+import calculate from '../logic/calculate';
 
 let calcObj = { total: '0', next: null, operation: null };
 
@@ -7,7 +7,7 @@ beforeEach(() => {
 });
 
 describe('it tests the addition function properly', () => {
-  test('it retrieves the correct number', ()=>{
+  test('it retrieves the correct number', () => {
     calcObj = calculate(calcObj, '1');
     calcObj = calculate(calcObj, '+');
     calcObj = calculate(calcObj, '5');
@@ -15,7 +15,7 @@ describe('it tests the addition function properly', () => {
     expect(calcObj.total).not.toBe('8');
   });
 
-  test('it adds integer numbers', ()=>{
+  test('it adds integer numbers', () => {
     calcObj = calculate(calcObj, '1');
     calcObj = calculate(calcObj, '+');
     calcObj = calculate(calcObj, '5');
@@ -23,7 +23,7 @@ describe('it tests the addition function properly', () => {
     expect(calcObj.total).toBe('6');
   });
 
-  test('it works with decimal numbers', ()=>{
+  test('it works with decimal numbers', () => {
     calcObj = calculate(calcObj, '1');
     calcObj = calculate(calcObj, '.');
     calcObj = calculate(calcObj, '5');
@@ -36,8 +36,8 @@ describe('it tests the addition function properly', () => {
   });
 });
 
-describe('it tests the substraction to function properly', ()=>{
-  test('it retrieves the correct number', ()=>{
+describe('it tests the substraction to function properly', () => {
+  test('it retrieves the correct number', () => {
     calcObj = calculate(calcObj, '8');
     calcObj = calculate(calcObj, '-');
     calcObj = calculate(calcObj, '5');
@@ -45,7 +45,7 @@ describe('it tests the substraction to function properly', ()=>{
     expect(calcObj.total).not.toBe('2');
   });
 
-  test('it adds integer numbers', ()=>{
+  test('it adds integer numbers', () => {
     calcObj = calculate(calcObj, '5');
     calcObj = calculate(calcObj, '-');
     calcObj = calculate(calcObj, '2');
@@ -53,7 +53,7 @@ describe('it tests the substraction to function properly', ()=>{
     expect(calcObj.total).toBe('3');
   });
 
-  test('it works with decimal numbers', ()=>{
+  test('it works with decimal numbers', () => {
     calcObj = calculate(calcObj, '4');
     calcObj = calculate(calcObj, '.');
     calcObj = calculate(calcObj, '5');
@@ -63,5 +63,97 @@ describe('it tests the substraction to function properly', ()=>{
     calcObj = calculate(calcObj, '1');
     calcObj = calculate(calcObj, '=');
     expect(calcObj.total).toBe('2.4');
+  });
+});
+
+describe('it tests the multiplication function properly', () => {
+  test('it retrieves the correct number', () => {
+    calcObj = calculate(calcObj, '2');
+    calcObj = calculate(calcObj, 'x');
+    calcObj = calculate(calcObj, '5');
+    calcObj = calculate(calcObj, '=');
+    expect(calcObj.total).not.toBe('50');
+  });
+
+  test('it multiply integer numbers', () => {
+    calcObj = calculate(calcObj, '2');
+    calcObj = calculate(calcObj, 'x');
+    calcObj = calculate(calcObj, '3');
+    calcObj = calculate(calcObj, '=');
+    expect(calcObj.total).toBe('6');
+  });
+
+  test('it works with decimal numbers', () => {
+    calcObj = calculate(calcObj, '1');
+    calcObj = calculate(calcObj, '.');
+    calcObj = calculate(calcObj, '5');
+    calcObj = calculate(calcObj, 'x');
+    calcObj = calculate(calcObj, '2');
+    calcObj = calculate(calcObj, '.');
+    calcObj = calculate(calcObj, '1');
+    calcObj = calculate(calcObj, '=');
+    expect(calcObj.total).toBe('3.15');
+  });
+
+  test('it retrieves the correct decimal number', () => {
+    calcObj = calculate(calcObj, '1');
+    calcObj = calculate(calcObj, '.');
+    calcObj = calculate(calcObj, '5');
+    calcObj = calculate(calcObj, 'x');
+    calcObj = calculate(calcObj, '2');
+    calcObj = calculate(calcObj, '.');
+    calcObj = calculate(calcObj, '1');
+    calcObj = calculate(calcObj, '=');
+    expect(calcObj.total).not.toBe('3.6');
+  });
+});
+
+describe('it tests the division function properly', () => {
+  test('it retrieves the correct number', () => {
+    calcObj = calculate(calcObj, '10');
+    calcObj = calculate(calcObj, '÷');
+    calcObj = calculate(calcObj, '2');
+    calcObj = calculate(calcObj, '=');
+    expect(calcObj.total).not.toBe('8');
+  });
+
+  test('it divides integer numbers', () => {
+    calcObj = calculate(calcObj, '10');
+    calcObj = calculate(calcObj, '÷');
+    calcObj = calculate(calcObj, '5');
+    calcObj = calculate(calcObj, '=');
+    expect(calcObj.total).toBe('2');
+  });
+
+  test('it works with decimal numbers', () => {
+    calcObj = calculate(calcObj, '8');
+    calcObj = calculate(calcObj, '.');
+    calcObj = calculate(calcObj, '5');
+    calcObj = calculate(calcObj, '÷');
+    calcObj = calculate(calcObj, '2');
+    calcObj = calculate(calcObj, '.');
+    calcObj = calculate(calcObj, '1');
+    calcObj = calculate(calcObj, '=');
+    expect(calcObj.total).toBe('4.04761904761904761905');
+  });
+
+  test('it retrieves the correct decimal number', () => {
+    calcObj = calculate(calcObj, '1');
+    calcObj = calculate(calcObj, '.');
+    calcObj = calculate(calcObj, '5');
+    calcObj = calculate(calcObj, '÷');
+    calcObj = calculate(calcObj, '1');
+    calcObj = calculate(calcObj, '.');
+    calcObj = calculate(calcObj, '1');
+    calcObj = calculate(calcObj, '=');
+    expect(calcObj.total).not.toBe('3.6');
+  });
+
+  test("Can't divide by 0", () => {
+    calcObj = calculate(calcObj, '10');
+    calcObj = calculate(calcObj, '÷');
+    calcObj = calculate(calcObj, '0');
+    calcObj = calculate(calcObj, '=');
+    expect(calcObj.total).toBe("Can't divide by 0.");
   });
 });
