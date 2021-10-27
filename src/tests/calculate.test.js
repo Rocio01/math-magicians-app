@@ -182,7 +182,7 @@ describe('it tests the division function properly', () => {
   });
 });
 
-describe('it tests the sign change', ()=>{
+describe('it tests the sign change', () => {
   test('it changes the + sign of a single number', () => {
     calcObj = calculate(calcObj, '10');
     calcObj = calculate(calcObj, '+/-');
@@ -217,11 +217,11 @@ describe('it tests the sign change', ()=>{
     calcObj = calculate(calcObj, '20');
     calcObj = calculate(calcObj, '+/-');
     expect(calcObj.next).not.toBe('-15');
-  });  
+  });
 });
 
-describe('it tests the mod operation', ()=>{
-  test('it gives the proper mod', ()=>{
+describe('it tests the mod operation', () => {
+  test('it gives the proper mod', () => {
     calcObj = calculate(calcObj, '10');
     calcObj = calculate(calcObj, '%');
     calcObj = calculate(calcObj, '2');
@@ -229,7 +229,7 @@ describe('it tests the mod operation', ()=>{
     expect(calcObj.total).toBe('0');
   });
 
-  test('it gives the proper mod', ()=>{
+  test('it gives the proper mod', () => {
     calcObj = calculate(calcObj, '10');
     calcObj = calculate(calcObj, '%');
     calcObj = calculate(calcObj, '3');
