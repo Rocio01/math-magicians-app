@@ -13,13 +13,17 @@
   text-align: right;
 }
 
-.App {
-  position: absolute;
-  left: 30%;
-  top: 10%;
-  font: 1em sans-serif;
+body {
+  background-color: #fff07c;
+  color: #2b363b;
 }
 
+ul {
+  background-color: #f0f7ee;
+}
+.title {
+  color: black;
+}
 .operators {
   background-color: rgb(255, 145, 71);
 }
@@ -29,6 +33,18 @@ button {
 }
 
 .active-link {
-  color: orangered;
-  text-decoration: underline;
+  color: #87bba2;
+}
+a {
+  text-decoration: none;
+  color: #2b363b;
+}
+a:hover,
+.title:hover {
+  color: #80783e;
+}
+
+p {
+  font: 1.5em sans-serif;
+  line-height: 1.5;
 }

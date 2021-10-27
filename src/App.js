@@ -8,11 +8,11 @@ import Navbar from './components/Navbar';
 
 export default function App() {
   return (
-    <>
+    <div className="principal">
       <Navbar />
       <Switch>
         <Route exact path="/">
-          <div className="App ">
+          <div className="App p-5 m-5">
             <Calculator />
           </div>
         </Route>
@@ -23,6 +23,6 @@ export default function App() {
           <Quote />
         </Route>
       </Switch>
-    </>
+    </div>
   );
 }

@@ -20,7 +20,7 @@ const Navbar = () => {
     },
   ];
   return (
-    <ul className="nav md-tabs light-blue lighten-1 mx-0 mb-0 mt-1 nav">
+    <ul className="nav p-3">
       <li className="nav-item">
         <h4 className="nav-link title">
           MATH MAGICIANS
