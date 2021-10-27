@@ -13,6 +13,7 @@ const Home = () => (
       <small>(The-Calculator-a-Brief-History, 2017)</small>
     </p>
   </div>
+
 );
 
 export default Home;
