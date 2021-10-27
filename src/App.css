@@ -21,9 +21,11 @@ body {
 ul {
   background-color: #f0f7ee;
 }
+
 .title {
   color: black;
 }
+
 .operators {
   background-color: rgb(255, 145, 71);
 }
@@ -35,10 +37,12 @@ button {
 .active-link {
   color: #87bba2;
 }
+
 a {
   text-decoration: none;
   color: #2b363b;
 }
+
 a:hover,
 .title:hover {
   color: #80783e;
